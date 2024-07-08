@@ -11,13 +11,13 @@
     margin: 0;
     padding: 0;
     box-sizing:0;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 
 
 nav {
     height: 80px;
-    background: #c8b58d;
+    background: #FCFBF4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@ nav {
 }
 
 .logo{
-    color: #000;
+    color: 	#3b3b3b;
     font-size:1.5rem;
     font-weight: bold;
     font-style: italic;
@@ -36,19 +36,20 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: #3b3b3b;
     padding: 0 1.5rem;
+    gap:10px;
 }
 
 nav a:hover {
-    color: #fff;
-    transition: ease-in-out all 0.3s;
-    border-bottom: 2px solid #000;
+    color: #000;
+    transition: ease-in-out all 0.1s;
+    border-bottom: 1px solid #000;
 
 }
 
 .hero {
-    background: #fff;
+    background: #FCFBF4;
     font-weight:100;
 }
 
@@ -63,7 +64,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #000;
+    color: #3b3b3b;
     padding: 0rem 10rem;
 }
 
@@ -78,18 +79,38 @@ nav a:hover {
     line-height: 1.5;
 }
 
-button:hover {
-    background: #c8b58d;
-    color: #000; 
-}
 .hero-image {
     width: 100%;
     height: 100%;
 }
 
-.photos {
-    padding:200px;
+.photos-container {
+    background-color: #FCFBF4;
+    max-width: 1224px;
+    width: 90%;
+    margin: auto; /* Center the container horizontally */
+    padding: 40px 0;
 }
+
+.photo-column {
+    display: inline-block; /* Ensure columns appear next to each other */
+    vertical-align: top; /* Align columns to the top */
+    width: 30%; /* Adjust width as needed */
+    margin-right: 3%; /* Specify a margin-right with unit (e.g., px, %) */
+    margin-bottom: 20px; /* Add margin bottom for spacing between columns */
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap; /* Ensure photos wrap within .photos container */
+    gap: 20px; /* Adjust gap between photos */
+}
+
+.photos img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 @media screen and (max-width: 760px) {
     .hero-container{
