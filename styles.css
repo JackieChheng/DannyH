@@ -8,20 +8,21 @@
   }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing:0;
     font-family: 'Montserrat';
 }
 
+body{
+    background-color: #FCFBF4;
+}
 
+/* NAVIGATION */
 nav {
     height: 80px;
     background: #FCFBF4;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw = 1300px) / 2);
+    padding: 0rem 20px;
     font-weight:700;
     font-style:italic;
 }
@@ -29,9 +30,9 @@ nav {
 .logo{
     color: 	#3b3b3b;
     font-size:1.5rem;
-    font-weight: bold;
+    font-weight:lighter;
     font-style: italic;
-    padding: 0.2rem;
+    padding: 2rem;
 }
 
 nav a {
@@ -39,25 +40,27 @@ nav a {
     color: #3b3b3b;
     padding: 0 1.5rem;
     gap:10px;
+    transition: opacity 0.3s ease;
+    opacity: 1;
 }
 
 nav a:hover {
-    color: #000;
-    transition: ease-in-out all 0.1s;
-    border-bottom: 1px solid #000;
-
+    opacity: 0.7;
 }
 
-.hero {
+/* HOME */
+.hero-wrap {
     background: #FCFBF4;
     font-weight:100;
 }
 
-.hero-container {
+.hero-warp-container {
     display: grid;
-    height: 95vh;
-    padding: 3rem calc((100vw - 1300px) / 2);
+    height: 50vw;
+    padding: 3rem 20px;
 }
+
+
 
 .column-middle {
     display:flex;
@@ -65,7 +68,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     color: #3b3b3b;
-    padding: 0rem 10rem;
+    padding: 0rem 5rem;
 }
 
 .column-middle h1 {
@@ -79,17 +82,24 @@ nav a:hover {
     line-height: 1.5;
 }
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-}
+.ml12 {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+  
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 
+/* PHOTOS */
 .photos-container {
     background-color: #FCFBF4;
-    max-width: 1224px;
     width: 90%;
     margin: auto; /* Center the container horizontally */
-    padding: 40px 0;
+    padding-left: 2.5%;
 }
 
 .photo-column {
@@ -97,6 +107,13 @@ nav a:hover {
     vertical-align: top; /* Align columns to the top */
     width: 30%; /* Adjust width as needed */
     margin-right: 3%; /* Specify a margin-right with unit (e.g., px, %) */
+    margin-bottom: 20px; /* Add margin bottom for spacing between columns */
+}
+
+.photo-column-end {
+    display: inline-block; /* Ensure columns appear next to each other */
+    vertical-align: top; /* Align columns to the top */
+    width: 30%; /* Adjust width as needed */
     margin-bottom: 20px; /* Add margin bottom for spacing between columns */
 }
 
