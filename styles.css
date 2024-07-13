@@ -18,7 +18,7 @@
     left: 0;
     width:100%;
     padding: 20px 12%;
-    background-color:#000;
+    background-color:#FCFBF4;
      /*FCFBF4  */
     justify-content: space-between;
     backdrop-filter: blur(10px);
@@ -29,7 +29,7 @@
 
 .logo{
     font-size:25px;
-    color:white;
+    color:#000;
     font-weight:500;
     transition: 0.3 ease;
 }
@@ -46,7 +46,7 @@ span{
 }
 
 .navbar a{
-    color: white;
+    color: #000;
     font-size: 16px;
     margin: 0 20px;
     border-bottom: 3px solid transparent;
@@ -61,8 +61,8 @@ span{
 
 .contact {
     padding:10px 20px;
-    color:black;
-    background-color: #FCFBF4;
+    color:white;
+    background-color:black;
     border:2px solid transparent;
     border-radius: 8px;
     font-size: 16px;
