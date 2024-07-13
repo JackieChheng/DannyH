@@ -1,157 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.montserrat-bold-italic {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: italic;
-  }
+
 
 *{
-    font-family: 'Montserrat';
     margin:0;
     padding:0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', serif;
 }
 
-body{
-    background-color: #FCFBF4;
-}
-
-/* NAVIGATION */
-nav {
-    height: 80px;
-    background:#FCFBF4;
-    display: flex;
-    position:fixed;
-    width:95%;
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    padding: 20px 12%;
+    background-color:#000;
+     /*FCFBF4  */
     justify-content: space-between;
+    backdrop-filter: blur(10px);
+    display:flex;
     align-items: center;
-    padding: 0rem 20px;
-    font-weight:700;
-    font-style:italic;
+    z-index:100;
 }
 
 .logo{
-    color: 	#3b3b3b;
-    font-size:1.5rem;
-    font-weight:lighter;
-    font-style: italic;
-    padding: 2rem;
+    font-size:25px;
+    color:white;
+    font-weight:500;
+    transition: 0.3 ease;
 }
 
-nav a {
-    text-decoration: none;
-    color: #3b3b3b;
-    padding: 0 1.5rem;
-    gap:10px;
-    transition: opacity 0.3s ease;
-    opacity: 1;
+.logo:hover {
+    color:red;
+    text-shadow: 0 0 25px red,
+                 0 0 50px red;
+    transform: scale(1.1);
 }
 
-nav a:hover {
-    opacity: 0.7;
+span{
+    color:red;
 }
 
-.btn{
-    padding:0.5em 1em;
-    color:000;
-    letter-spacing: 1px;
-    border-radius: 0.5em;
-    font-size: 1.1em;
-    border: 2px solid #3b3b3b;
-    cursor:pointer;
-    transition: 0.3s ease-in-out;
+.navbar a{
+    color: white;
+    font-size: 16px;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
 }
 
-.btn:hover{
-    background-color: #3b3b3b;
-    color:#FCFBF4;
+.navbar a:hover,
+.navbar a.active{
+    color:red;
+    border-bottom: 3px solid red;
 }
 
-/* HOME */
-.hero-wrap {
-    background: #FCFBF4;
-    font-weight:100;
-}
-
-.hero-warp-container {
-    display: grid;
-    height: 50vw;
-    padding: 3rem 20px;
-}
-
-
-
-.column-middle {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #3b3b3b;
-    padding: 0rem 5rem;
-}
-
-.column-middle h1 {
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-
-.column-middle p {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.ml12 {
-    font-weight: 200;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-  }
-  
-.ml12 .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
-
-/* PHOTOS */
-.photos-container {
+.contact {
+    padding:10px 20px;
+    color:black;
     background-color: #FCFBF4;
-    width: 90%;
-    margin: auto; /* Center the container horizontally */
-    padding-left: 2.5%;
+    border:2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing:1px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-.photo-column {
-    display: inline-block; /* Ensure columns appear next to each other */
-    vertical-align: top; /* Align columns to the top */
-    width: 30%; /* Adjust width as needed */
-    margin-right: 3%; /* Specify a margin-right with unit (e.g., px, %) */
-    margin-bottom: 20px; /* Add margin bottom for spacing between columns */
-}
-
-.photo-column-end {
-    display: inline-block; /* Ensure columns appear next to each other */
-    vertical-align: top; /* Align columns to the top */
-    width: 30%; /* Adjust width as needed */
-    margin-bottom: 20px; /* Add margin bottom for spacing between columns */
-}
-
-.photos {
-    display: flex;
-    flex-wrap: wrap; /* Ensure photos wrap within .photos container */
-    gap: 20px; /* Adjust gap between photos */
-}
-
-.photos img {
-    width: 100%; /* Ensure images fill their container */
-    height: auto; /* Maintain aspect ratio */
+.contact:hover{
+    background-color: red;
+    box-shadow: 0 0 25px red;
+    color:white;
 }
 
 
-@media screen and (max-width: 760px) {
-    .hero-container{
-        grid-template-columns: 1fr;
-        }
-    }
+.home{
+    width:100%;
+    min-height:100vh;
+    background-color:#FCFBF4;
+    display:flex;
+    align-items: center;
+    gap:7em;
+    padding:30px 12% 0;
+}
+
+.home-content{
+    max-width:800px;
+}
+
+.home-content h3{
+    font-size:42px;
+}
+
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p{
+    font-size:18px;
+    margin:25px 0 30px;
+}
+
+.btn
+
+img{
+    WIDTH:10px;
+}
+
