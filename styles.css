@@ -162,14 +162,16 @@ span{
 }
 
 ::-webkit-scrollbar{
-    width:15px;
+    width:8px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: red;
+    border-radius: 2em;
 }
 ::-webkit-scrollbar-track{
     background-color: black;
-    width:50px;
+    border-radius: 2em;
+    width: 20px;
 }
 
 /* ABOUT */
