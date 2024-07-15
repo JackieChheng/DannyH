@@ -12,6 +12,10 @@
     font-family: 'Raleway', serif;
 }
 
+body{
+    background-color: #FCFBF4;
+}
+
 .header{
     position: fixed;
     top:0;
@@ -28,7 +32,7 @@
 }
 
 .logo{
-    font-size:25px;
+    font-size:30px;
     color:#000;
     font-weight:500;
     transition: 0.3s ease;
@@ -81,6 +85,7 @@ span{
 .home{
     width:100%;
     min-height:100vh;
+    margin-top: 10vh;
     background-color:#FCFBF4;
     display:flex;
     align-items: center;
@@ -106,9 +111,127 @@ span{
     margin:25px 0 30px;
 }
 
-.btn
-
-img{
-    WIDTH:10px;
+.btn-box{
+    width:345px;
+    display:flex;
+    gap: 2em;
 }
 
+.btn-1{
+    padding:15px 28px;
+    background-color: black;
+    color:White;
+    border:2px solid transparent;
+    border-radius:8px;
+    font-size:18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor:pointer;
+}
+
+.btn-1:hover{
+    background-color: #FCFBF4;
+    color:black;
+    border:2px solid black;
+}
+.btn-2{
+    padding:15px 28px;
+    background-color:red;
+    color:white;
+    border: 2px solid red;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor:pointer;
+}
+
+.btn-2:hover{
+    background-color:#FCFBF4;
+    color:red;
+}
+
+.img-box img{
+    border-radius: 50%;
+    width:350px;
+}
+
+::-webkit-scrollbar{
+    width:15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width:50px;
+}
+
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:12% 8%;
+    gap: 10em;
+    background:#FCFBF4;
+}
+
+.about-img img{
+    position:relative;
+    width:350px;
+    box-shadow: 0 0 25px red,
+                0 0 50px red;
+    border-radius: 50%;
+}
+
+.about-content h2{
+    text-align: left;
+    color:black;
+    font-size:32px;
+}
+
+.about-content h3{
+    font-size: 62px;
+    color:black;
+
+}
+
+.about-content p {
+    color:black;
+    font-size:20px;
+    margin: 2em 0 3em;
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size:36px;
+}
+
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align:center;
+    margin-bottom:3em;
+}
+
+.contact-form form .input-box{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width:100%;
+    padding:1.5em;
+    font-size:10px; 
+    color:black;
+    background:#FCFBF4;
+    border-radius: 0.8rem;
+    margin:1rem 0;
+    resize:none;
+}
