@@ -4,19 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Daniel Hernandez</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<script src="script.js"></script>
+	<script src="/js/script.js"></script>
 </head>
 <body>
 	<header class="header">
-	<a href="#home" class="logo">DANNY</a>
+	<a href="#home" class="logo"> DANNY</a>
 	<!-- NAVIGATION SECTION -->
 	<nav class="navbar">
 			<a href="#home" class="active">Home</a>
 			<a href="#about">About</a>
 			<a href="#gallery">Gallery</a>
-			<a href="#">Resume</a>
+			<a href="#">Education</a>
 	</nav>
 	<a href="#contact" class='contact'>Contact Me</a>
 	</header>
@@ -30,8 +30,7 @@
 
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga nam unde dolores dolorem, at sapiente quibusdam corrupti sed voluptatibus assumenda ex corporis quis cupiditate in expedita molestias. Quae, iste.</p>
 		<div class="btn-box">
-			<button class="btn-1">Hire Me</button>
-			<button class="btn-2">Experience</button>
+			<a href="#about"><button class="btn-2">About me</button></a>
 		</div>
 	  </div>
 	  <div class="img-box">
@@ -47,7 +46,7 @@
 			<h2 class="heading">About <span>Me</span></h2>
 			<h3>Business<span> student</span></h3>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias delectus numquam magnam mollitia, optio enim a asperiores quam quis corporis praesentium impedit nobis officiis at necessitatibus illum fuga. Inventore.</p>
-			<a href="#" class="btn-2"> Experience</a>
+			<a href="#" class="btn-2"> Resume</a>
 		</div>
 	</section>
 	<section class="photo-container" >
@@ -78,25 +77,25 @@
 		</div>
 	</section>
 	<!-- CONTACT -->
-	<section class="contact-form" id="contact">
+	<div class="contact-form" id="contact">
 		<h2 class="contact-me">Contact <span> Me</span></h2>
 
 		<form action="#">
 
 		<div class="input-box">
-			<input type="text" placeholder="Full Name">
-			<input type="email" placeholder="Email">
+			<input type="text" placeholder="Full Name" required>
+			<input type="email" placeholder="Email" required>
 		</div>
 		<div class="input-box">
-			<input type="phone" placeholder="Phone Number">
-			<input type="text" placeholder="Subject">
+			<input type="phone" placeholder="Phone Number" required>
+			<input type="text" placeholder="Subject" required>
 		</div>
 
 		<textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
 		<input type="submit" value="Send Message" class="btn-1">
 
 		</form>
-	</section>
+	</div>
 
 	<!-- FOOTER -->
 	<footer class="footer">
