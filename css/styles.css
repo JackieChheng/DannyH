@@ -41,14 +41,14 @@ body{
 }
 
 .logo:hover {
-    color:red;
-    text-shadow: 0 0 25px red,
-                 0 0 50px red;
+    color:#E74C3C ;
+    text-shadow: 0 0 25px #E74C3C ,
+                 0 0 50px #E74C3C ;
     transform: scale(1.1);
 }
 
 span{
-    color:red;
+    color:#E74C3C ;
 }
 
 .navbar a{
@@ -61,8 +61,8 @@ span{
 
 .navbar a:hover,
 .navbar a.active{
-    color:red;
-    border-bottom: 3px solid red;
+    color:#E74C3C ;
+    border-bottom: 3px solid #E74C3C ;
 }
 
 .contact {
@@ -78,8 +78,8 @@ span{
 }
 
 .contact:hover{
-    background-color: red;
-    box-shadow: 0 0 25px red;
+    background-color: #E74C3C ;
+    box-shadow: 0 0 25px #E74C3C ;
     color:white;
 }
 
@@ -140,9 +140,9 @@ span{
 }
 .btn-2{
     padding:15px 28px;
-    background-color:red;
+    background-color:#E74C3C ;
     color:white;
-    border: 2px solid red;
+    border: 2px solid #E74C3C ;
     border-radius: 8px;
     font-size: 18px;
     letter-spacing: 1px;
@@ -153,7 +153,7 @@ span{
 
 .btn-2:hover{
     background-color:#FCFBF4;
-    color:red;
+    color:#E74C3C ;
 }
 
 .img-box img{
@@ -167,7 +167,7 @@ span{
     width:8px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: red;
+    background-color: #E74C3C ;
     border-radius: 2em;
 }
 ::-webkit-scrollbar-track{
@@ -190,8 +190,8 @@ span{
 .about-img img{
     position:relative;
     width:350px;
-    box-shadow: 0 0 25px red,
-                0 0 50px red;
+    box-shadow: 0 0 25px #E74C3C ,
+                0 0 50px #E74C3C ;
     border-radius: 2em;
     
 }
@@ -272,37 +272,82 @@ span{
 } 
 
 /* CONTACT FORM */
-.contact-form h2{
+.contact-section {
+    width: 100%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10rem 1rem;
+  }
+  
+  .contact-intro > * + * {
+    margin-top: 1rem;
+  }
+  
+  .contact-title {
+    font-size: 62px;
+    line-height: 2.25rem;
+    font-weight: 700;
     text-align: center;
-    margin-top: 3em;
     margin-bottom: 1em;
-    font-size:36px;
-}
-
-.contact-form form{
-    max-width: 50em;
-    margin: 1rem auto;
-    text-align:center;
-    margin-bottom:3em;
-}
-
-.contact-form form .input-box{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contact-form form .input-box input,
-.contact-form form textarea{
-    width:100%;
-    padding:1.5em;
-    font-size:10px; 
-    color:black;
-    background:white;
-    border-radius: 0.8rem;
-    margin:1rem 0;
-    resize:none;
-}
+  }
+  
+  .contact-description {
+    text-align: center;
+    color: rgb(107 114 128);
+  }
+  
+  .form-group-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .form-input::placeholder,
+  .form-textarea:focus-visible {
+    color: #6b7280;
+  }
+  
+  .form-input:focus-visible,
+  .form-textarea:focus-visible {
+    outline: 2px solid #E74C3C ;
+    outline-offset: 2px;
+  }
+  
+  .form-textarea {
+    min-height: 120px;
+  }
+  
+  .form-submit {
+    width: 100%;
+    margin-top: 1.2rem;
+    background-color: #E74C3C ;
+    color: #fff;
+    padding: 13px 5px;
+    border-radius: 0.375rem;
+  }
+  
 /* FOOTER */
 
 .footer{
@@ -322,7 +367,7 @@ span{
 .footer .social a{
     font-size:24px;
     color:black;
-    border:2px solid red;
+    border:2px solid #E74C3C ;
     width:40px;
     height: 40px;
     line-height: 1.5em;
@@ -330,15 +375,15 @@ span{
     text-align: center;
     border-radius: 50%;
     margin:0 8px;
-    box-shadow: inset 0 0 10px red,
-                      0 0 10px red;
+    box-shadow: inset 0 0 10px #E74C3C ,
+                      0 0 10px #E74C3C ;
     transition: 0.3s ease;
 }
 
 .footer .social a:hover{
     transform: scale(1.2)translateY(-10px);
-    color:Red;
-    border: 2px solid red;
+    color:#E74C3C ;
+    border: 2px solid #E74C3C ;
 }
 
 .footer ul{
@@ -356,7 +401,7 @@ span{
 }
 
 .footer ul li a:hover{
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #E74C3C ;
 }
 .footer ul li{
     display: inline-block;

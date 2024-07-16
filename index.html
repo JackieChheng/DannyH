@@ -76,25 +76,42 @@
 		</div>
 	</section>
 	<!-- CONTACT -->
-	<div class="contact-form" id="contact">
-		<h2 class="contact-me">Contact <span> Me</span></h2>
-
-		<form action="#">
-
-		<div class="input-box">
-			<input type="text" placeholder="Full Name" required>
-			<input type="email" placeholder="Email" required>
+	<section class="contact-section">
+		<div class="contact-intro">
+		  <h2 class="contact-title">Contact <span>Me</span></h2>
+		  <p class="contact-description">
+			Fill out the form below and I'll get back to you as soon as possible.
+		  </p>
 		</div>
-		<div class="input-box">
-			<input type="phone" placeholder="Phone Number" required>
-			<input type="text" placeholder="Subject" required>
-		</div>
-
-		<textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-		<input type="submit" value="Send Message" class="btn-1">
-
+	  
+		<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+	  
+		  <input type="hidden" name="access_key" value="37ebdd70-5285-4fe5-ba55-e58b0adae682" />
+		  <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+		  <input type="hidden" name="from_name" value="My Website" />
+	  
+		  <div class="form-group-container">
+			<div class="form-group">
+			  <label for="name" class="form-label">Name</label>
+			  <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+			</div>
+			<div class="form-group">
+			  <label for="email" class="form-label">Email</label>
+			  <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+			</div>
+			<div class="form-group">
+			  <label for="phone" class="form-label">Phone</label>
+			  <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+			</div>
+			<div class="form-group">
+			  <label for="message" class="form-label">Message</label>
+			  <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+			</div>
+		  </div>
+		  <button class="form-submit" type="submit">Send Message</button>
 		</form>
-	</div>
+	  
+	  </section>
 
 	<!-- FOOTER -->
 	<footer class="footer">
